@@ -6,12 +6,9 @@ tags = ['baserow', 'n8n', 'Ollama']
 title = 'Setting Up My First Baserow Stack With YouTube and AI'
 +++
 
-I wanted to build a content automation system that runs completely
-offline, and setting up the stack for it became the next major step.
-This post covers how I built my first Baserow-based stack by following
-YouTube tutorials and using AI to fill the gaps. It was a simple plan on
-paper but turned into a long mix of experimenting, troubleshooting, and
-learning how the parts actually work together.
+I wanted a content-automation system that could run locally, so building the stack behind it became the next major step. The plan looked simple on paper: Baserow for data, MinIO for media, n8n for automation, and local AI tools where they made sense.
+
+In practice, the setup became a mix of tutorials, AI-assisted questions, experiments, and the slower work of understanding how every service connects to the next.
 
 ### **Main Journey**
 

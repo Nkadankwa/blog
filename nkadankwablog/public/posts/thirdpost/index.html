@@ -1,0 +1,139 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · When Research Meets Reality: My Unexpected Home Lab Setup?</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#39d98a" href="/categories/homelab/">Homelab</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/sbcs/">SBCs</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/raspberrypi/">RaspberryPi</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/mini-pc/">Mini PC</a>
+</div><h1>When Research Meets Reality: My Unexpected Home Lab Setup?</h1><img src="/images/sbc_vs_mini_pc.jpg" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-lessons-learned">🧠 Lessons Learned</a></li>
+    <li><a href="#-resources-used">📚 Resources Used</a></li>
+    <li><a href="#-whats-next">🔧 What’s Next?</a></li>
+    <li><a href="#-final-thoughts">💭 Final Thoughts</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>As I mentioned in my <a href="#">previous blog post</a>, I started off doing a deep
+dive into what I’d need to get started with my home lab journey. I
+joined communities, watched videos, and read a ton of beginner guides.
+It wasn’t long before I hit the first fork in the road:</p>
+<blockquote>
+<p><strong>“What kind of hardware am I going to use for my home lab?”</strong></p>
+</blockquote>
+<p>I quickly ruled out using my old laptop because I was currently far from
+home and couldn’t access it. That left me with two main options: an SBC
+(Single-Board Computer) or a mini PC. Naturally, I was drawn toward
+SBCs—mainly because I’d used a Raspberry Pi back in school and had fond
+memories of it.</p>
+<p>But that nostalgia didn’t last long.</p>
+<p>When I checked the prices, reality hit hard. Raspberry Pis—especially
+the newer models—were way above my budget. Sure, I could have settled
+for a cheaper model, but in my mind, if I compromised now, I might not
+be able to do everything I planned. Worse, I’d likely have to upgrade
+sooner than expected, which would cost even more in the long run.</p>
+<p>Another reason I was leaning toward SBCs was that a friend of mine was
+working on a similar project using a Raspberry Pi. It felt like the
+right move. And just like that, I’d made up my mind.</p>
+<blockquote>
+<p><strong>“I’m going with a Raspberry Pi for this project.”</strong></p>
+</blockquote>
+<p>&hellip;or so I thought.</p>
+<p>Suddenly, a new question popped into my head:</p>
+<blockquote>
+<p><strong>“Why am I limiting myself to just the Raspberry Pi?”</strong></p>
+</blockquote>
+<p>Cue another research spiral.</p>
+<p>I fired up Google’s Gemini and asked it to generate a comparison report
+on various SBCs and mini PCs that were in the same price range—or
+cheaper—than the Raspberry Pi. What I got was a <strong>50-page report</strong>
+filled with hardware I didn’t even know existed. Still, I stayed focused
+on the SBCs. I was drawn to their size, weight, and portability.</p>
+<p>For days, I went deep into researching each SBC in the report: their
+specs, pricing, OS compatibility, power requirements—you name it.
+Eventually, I narrowed it down to three options.</p>
+<p>But just as I was figuring out how to start saving up, I had another
+realization:</p>
+<p><strong>“The SBCs themselves aren’t that expensive&hellip; but the addons? That’s
+where the real cost is.”</strong></p>
+<p>To get the performance and expandability I wanted, I’d need
+accessories—PSUs, SD cards, heatsinks, enclosures—and they all added up
+quickly. That’s when I started thinking about the “all-in-one”
+alternative: mini PCs.</p>
+<p>I looked into used mini PCs and, to my surprise, found several options
+that were actually cheaper than the full SBC setup I had planned. I
+bookmarked a few Dell OptiPlex listings—mainly because they were the
+most available and affordable.</p>
+<p>But then life threw me a curveball.</p>
+<p>I visited a friend who had been complaining about his old laptop for
+months. It had battery issues, Windows was deactivated (so no updates),
+and it just felt “done” to him. Half-jokingly, I offered to buy it from
+him—and to my surprise, <strong>he immediately agreed</strong>.</p>
+<p>We negotiated the price, and I ended up buying it for way less than both
+the SBC and mini PC options I had been researching. I replaced the
+battery, installed an SSD I already had, activated Windows, and fully
+updated the system.</p>
+<p><strong>And just like that, I had my home lab hardware.</strong></p>
+<h2 id="-lessons-learned">🧠 Lessons Learned</h2>
+<blockquote>
+<p><strong>Don’t be so fixated on past experiences.</strong> Just because something
+worked for you before doesn’t mean it’s the best option now.</p>
+<p><strong>Don’t rush decisions.</strong> Sometimes slowing down leads you to a
+better—and cheaper—solution.</p>
+</blockquote>
+<h2 id="-resources-used">📚 Resources Used</h2>
+<p>If you’re on a similar journey and looking to research hardware or plan
+your own home lab, these are some of the resources I found incredibly
+helpful:</p>
+<blockquote>
+<p><strong>Google Gemini</strong> – Used to generate a comprehensive report comparing
+SBCs and mini PCs.</p>
+<p><strong>YouTube Channels:</strong></p>
+<p>Techno Tim – What is a Home Lab and How to Start</p>
+<p>TechHut – 5 Reasons Everyone Needs a Home Server</p>
+<p>Christian Lempa – How to Start Your HomeLab Journey</p>
+<p><strong>Reddit communities</strong> like r/homelab – For advice, feedback, and
+inspiration.</p>
+<p><strong>Used hardware marketplaces</strong> – Facebook Marketplace, eBay, and local
+tech groups.</p>
+</blockquote>
+<h2 id="-whats-next">🔧 What’s Next?</h2>
+<p>Now that I finally have the hardware ready, here’s what’s coming up in
+the next phase of my journey:</p>
+<blockquote>
+<p>Install and test Linux distros for the home lab.</p>
+<p>Set up basic services (e.g., file sharing, backups, and monitoring).</p>
+<p>Explore containerization (Docker is up first!).</p>
+<p>Gradually build toward automating parts of my setup.</p>
+</blockquote>
+<p>I’ll be documenting every step and lesson I learn—successes and failures
+included.</p>
+<h2 id="-final-thoughts">💭 Final Thoughts</h2>
+<p>This whole experience reminded me that flexibility and patience can go a
+long way. I spent weeks researching the “ideal” solution, only for a
+cheaper and better option to fall into my lap unexpectedly. And you know
+what? That’s okay.</p>
+<p>So if you’re on your own home lab journey, take your time, stay curious,
+and don’t stress too much about getting everything perfect from the
+start.</p>
+<p>We’ll figure it out as we go. 🙌</p>
+</div></div></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

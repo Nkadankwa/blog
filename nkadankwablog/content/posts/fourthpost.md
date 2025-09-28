@@ -6,14 +6,13 @@ tags = ['Linux', 'Proxmox', 'Ubuntu']
 title = 'From Proxmox Dreams to Ubuntu Reality'
 +++
 
-Now that I had selected my hardware for the project, it was time to face
-one of the most important decisions:
+With the hardware chosen, I reached one of the first decisions that would shape everything that followed: the operating system.
+
+I was excited about this part. Linux is often described as the place where a homelab becomes truly flexible, but I also knew that choosing a tool is different from making it work in the environment I actually have.
+
+The question was simple:
 
 > “Which OS should I use?”
-
-I’d often heard people online praise Linux for how much it enables you
-to do, especially in home labs. So this step was something I was
-actually excited about.
 
 I’d seen one of my mentors using Kali Linux, and he told me it was one
 of the best choices for his field—Cybersecurity. I liked its look and

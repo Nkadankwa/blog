@@ -7,11 +7,9 @@ title = 'Why I Chose Baserow Over Airtable and Others'
 +++
 
 
-I needed a data layer for my automation setup, and the choice came down
-to Airtable, Notion, Supabase, and Baserow. I wasn’t looking for
-something fancy. I wanted something local, predictable, and easy to
-automate. After comparing options and watching a ridiculous number of
-YouTube tutorials, I settled on Baserow.
+I needed a data layer for the automation setup, and the choice came down to Airtable, Notion, Supabase, and Baserow. I was not looking for the most fashionable option. I wanted something local, predictable, and comfortable to automate.
+
+After comparing the tools, watching more tutorials than I expected, and testing what the workflows would actually require, I settled on Baserow.
 
 ### **Main Journey**
 

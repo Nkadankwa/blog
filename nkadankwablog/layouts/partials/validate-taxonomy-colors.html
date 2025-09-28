@@ -1,0 +1,5 @@
+{{ $taxonomyColors := index site.Data "taxonomy-colors" }}
+{{ range $taxonomyColors.entries }}
+  {{ $matches := where $taxonomyColors.entries "color" .color }}
+  {{ if gt (len $matches) 1 }}{{ warnf "Taxonomy colour %s is assigned more than once. Choose a unique colour in data/taxonomy-colors.yaml." .color }}{{ end }}
+{{ end }}

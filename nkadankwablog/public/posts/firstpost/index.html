@@ -1,0 +1,81 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · 🚧 The False Start to My Homelab Journey (Before I Knew What It Was)</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#39d98a" href="/categories/homelab/">Homelab</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/syncthing/">syncthing</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/wsl2/">WSL2</a>
+</div><h1>🚧 The False Start to My Homelab Journey (Before I Knew What It Was)</h1><img src="/images/false_start.jpg" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-where-it-actually-started">🔍 Where It <em>Actually</em> Started</a></li>
+    <li><a href="#-first-attempt-at-a-private-cloud">🐣 First Attempt at a Private Cloud</a></li>
+    <li><a href="#-lessons-learned-the-hard-way">📌 Lessons Learned (the Hard Way)</a></li>
+    <li><a href="#-resources-i-went-through">📔 Resources I Went Through</a></li>
+    <li><a href="#whats-next">What’s Next?</a></li>
+    <li><a href="#-final-thoughts">✨ Final Thoughts</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>Taking the first step in anything tech-related can feel like opening a puzzle box—especially when you don’t know what picture you’re even trying to build. At the time, I wasn’t planning to build a home lab. In fact, I didn’t even know what a home lab was.</p>
+<p>But I did know one thing:</p>
+<blockquote>
+<p>I wanted seamless access to my files, no matter what device I was on.</p>
+</blockquote>
+<p>And that seemingly simple goal? It sent me on a spiral of trial, error, and stubborn persistence.</p>
+<h2 id="-where-it-actually-started">🔍 Where It <em>Actually</em> Started</h2>
+<p>The issue was clear: I needed a way to access, manage, and transfer files across all my devices—devices that ran on different operating systems.</p>
+<p>The solution? Much murkier.</p>
+<p>At first, I tried basic apps like Syncthing, which is great for syncing folders but felt too limited for what I had in mind. Joplin came next for notes, and before that, I was (and still am) using Telegram’s saved messages to toss files and links between devices.</p>
+<p>I also researched apps like Obsidian and Evernote, hoping to find a flexible, central space for notes and file access—but none of them quite solved the root problem.</p>
+<p>That’s when I stumbled upon the idea of setting up my own cloud. I didn’t fully understand what that entailed at the time, but the phrase “self-hosted Nextcloud” kept popping up in forums and videos, and it sounded exactly like what I needed.</p>
+<h2 id="-first-attempt-at-a-private-cloud">🐣 First Attempt at a Private Cloud</h2>
+<p>I decided to give it a go. I installed WSL2 on my Windows laptop, installed Docker (after way too many Compose errors), and attempted to spin up a Nextcloud container.
+My thinking was:</p>
+<blockquote>
+<p>“If I can get this working now, I can just move the setup to whatever system I build later.”</p>
+</blockquote>
+<p>But spoiler alert—it didn’t go smoothly.</p>
+<p>I deleted and reinstalled Docker multiple times, moved files to an external drive, and tried setting up persistent storage using a partition formatted as ext4 (which, in theory, would play nice with Linux systems). But mounting it properly was a challenge of its own. I <em>think</em> I got it right… eventually.</p>
+<p>Every time I thought I had it working, something broke. Nextcloud would fail to start. Tailscale would refuse to connect. And VPN conflicts meant even downloading updates or getting Docker images became a mess.</p>
+<h2 id="-lessons-learned-the-hard-way">📌 Lessons Learned (the Hard Way)</h2>
+<p>Looking back, it’s easy to laugh at how chaotic this phase was. But I picked up some important lessons along the way:</p>
+<ul>
+<li><strong>Just because something works on one OS doesn’t mean it’ll translate easily</strong>.</li>
+<li><strong>Reading the docs matters.</strong> AI tools helped, but they often gave me outdated or just plain wrong steps.</li>
+<li><strong>Don’t rush to scale.</strong> I was trying to build a “transferable setup” before I even had a stable one.</li>
+</ul>
+<h2 id="-resources-i-went-through">📔 Resources I Went Through</h2>
+<p>While most things didn’t go to plan, these resources played a role in nudging me forward:</p>
+<ul>
+<li>YouTube tutorials on setting up Docker and WSL2</li>
+<li>GitHub repos for Nextcloud and Tailscale Compose files</li>
+<li>Stack Overflow (a lot)</li>
+<li>Free AI tools like ChatGPT and Gemini (until I ran out of free usage )</li>
+<li>Reddit threads and niche tech blogs</li>
+</ul>
+<h2 id="whats-next">What’s Next?</h2>
+<p>After hitting roadblock after roadblock, I eventually realized I was going about things backward.
+I was trying to build infrastructure without understanding what I was building.
+That’s when the idea of a home server came up—and then a home lab.
+But that’s a story for the next post.</p>
+<h2 id="-final-thoughts">✨ Final Thoughts</h2>
+<p>This wasn’t the start I expected, but maybe that’s the point. Sometimes, you have to stumble into the right path. My “false start” ended up teaching me more than any successful first attempt ever could have.
+So if you’re feeling stuck or confused right now—don’t worry. You might just be in the first chapter of your own tech journey.
+And trust me… it gets better.</p>
+</div></div></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

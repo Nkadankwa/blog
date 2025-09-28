@@ -1,0 +1,119 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · My First n8n &amp; Ollama Experiment (and the Telegram Bot Mess)</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#7c5cff" href="/categories/preparatory-homelab-hiatus/">Preparatory Homelab hiatus</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#ff6d3b" href="/tags/n8n/">n8n</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#2696ff" href="/tags/docker/">Docker</a>
+</div><h1>My First n8n &amp; Ollama Experiment (and the Telegram Bot Mess)</h1><img src="/images/N8n.png" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-main-setup">The Main Setup</a></li>
+        <li><a href="#the-telegram-bot-attempt">The Telegram Bot Attempt</a></li>
+        <li><a href="#lessons-learned">Lessons Learned</a></li>
+        <li><a href="#whats-next">What’s Next</a></li>
+        <li><a href="#final-thoughts">Final Thoughts</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></aside><div class="article-content"><p>As I said in my last post I have gotten my first local Ai and as such
+this post covers my first attempt to link n8n with Ollama on Windows
+using Docker Desktop. I wanted a simple setup that could move me closer
+to a full homelab, but the whole thing ended badly. Still, it pushed my
+learning forward.</p>
+<h3 id="the-main-setup">The Main Setup</h3>
+<p>Since I don’t have my main homelab yet, I tested everything on Windows
+with Docker Desktop. My plan was simple:</p>
+<blockquote>
+<p>Run Ollama in Docker</p>
+<p>Run n8n in Docker</p>
+<p>Connect the two</p>
+<p>Build a workflow</p>
+<p>Add a Telegram bot on top</p>
+</blockquote>
+<p>Docker Desktop made the installation part easy. Both containers came up
+without trouble, and I could open n8n in the browser. I added an Ollama
+credential in n8n and connected it to the Ollama container. That part
+worked. I also pulled a couple of models—first Mistral, then Qwen3—so I
+could test responses inside n8n.</p>
+<p>Once everything connected, I built a tiny workflow: a trigger and a
+prompt node. It ran, and the model replied, although slowly, since there
+was no GPU acceleration. But technically, it worked. That small win was
+enough motivation to move to the next idea.</p>
+<h3 id="the-telegram-bot-attempt">The Telegram Bot Attempt</h3>
+<p>This is where everything went downhill.</p>
+<p>I created a Telegram bot and tried linking it to n8n so I could message
+it and get responses from my local model. The plan was simple:</p>
+<blockquote>
+<p>Telegram sends a message</p>
+<p>n8n receives it</p>
+<p>n8n passes it to Ollama</p>
+<p>Ollama replies</p>
+</blockquote>
+<p>The problem was the trigger. Telegram doesn’t accept local URLs. It
+needs a public, secure URL. And since I was running everything on
+Windows inside Docker, there was no reliable way to expose it safely. I
+couldn’t give Telegram a stable address. Every workaround I tried
+eventually hit the same wall.</p>
+<p>Trying to expose n8n properly wasn’t an option because:</p>
+<blockquote>
+<p>No access to router port forwarding</p>
+<p>Windows network was logged in through a controlled network</p>
+<p>No stable external IP</p>
+<p>Reverse proxy on Windows made no sense in my situation</p>
+</blockquote>
+<p>So all routes that use a domain + reverse proxy + cert were off the
+table.</p>
+<p>After hours of back and forth, I accepted the truth:<br>
+<strong>The Telegram bot wasn’t going to work in this setup.</strong></p>
+<p>The experiment ended there.</p>
+<h3 id="lessons-learned">Lessons Learned</h3>
+<p>Here’s what this whole failed attempt taught me:</p>
+<blockquote>
+<p><strong>You need stable networking for bot integrations.</strong> Local setups
+won’t cut it.</p>
+<p><strong>CPU-only models are painfully slow.</strong> You can run them, but don’t
+expect snappy replies.</p>
+<p><strong>Docker Desktop on Windows is fine for testing.</strong> But it’s limited
+for anything that needs incoming traffic.</p>
+<p><strong>Trying and failing still teaches you something.</strong> Even if the
+project collapses, you walk away knowing more than when you started.</p>
+</blockquote>
+<h3 id="whats-next">What’s Next</h3>
+<p>Since I can’t run proper external integrations on this temporary Windows
+setup, my next steps are simple:</p>
+<blockquote>
+<p>Keep running local models and workflows inside n8n</p>
+<p>Practice building automations without external triggers</p>
+<p>Save the bigger ideas for when the real homelab returns</p>
+<p>Plan a proper setup that supports secure access, private LLMs, and
+long-term workflows</p>
+</blockquote>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>This experiment didn’t work, but it wasn’t a waste. It pushed me to
+think more about infrastructure, networking, and how different parts
+need to connect. The Telegram bot might have failed, but the learning
+didn’t. When the full homelab comes back, I’ll pick this project up
+again with better hardware, better networking, and fewer limitations.</p>
+<p>For now, the Windows test phase continues, and every failed attempt
+prepares me for when the real setup arrives.</p>
+</div></div><section class="related"><h2>Keep exploring</h2><div class="mini-grid"><a class="mini-card" href="/posts/seventhpost/"><h3>Fixing Mounting Issues – A Deeper Dive Into the Solution</h3><time>Aug 18, 2025</time></a><a class="mini-card" href="/posts/sixthpost/"><h3>The Portable Cloud Experiment – A Failed Attempt</h3><time>Aug 11, 2025</time></a></div></section></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

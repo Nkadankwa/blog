@@ -7,11 +7,9 @@ title = 'My First n8n & Ollama Experiment (and the Telegram Bot Mess)'
 +++
 
 
-As I said in my last post I have gotten my first local Ai and as such
-this post covers my first attempt to link n8n with Ollama on Windows
-using Docker Desktop. I wanted a simple setup that could move me closer
-to a full homelab, but the whole thing ended badly. Still, it pushed my
-learning forward.
+After getting my first local model running, I wanted to see what happened when I connected it to automation. This was my first attempt to link n8n and Ollama on Windows through Docker Desktop.
+
+The plan was modest: make a local workflow work, then add a Telegram bot. It did not end the way I expected, but it clarified the difference between a local experiment and a service that needs to receive traffic from the internet.
 
 ### The Main Setup
 

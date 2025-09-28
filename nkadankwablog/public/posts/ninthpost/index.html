@@ -1,0 +1,134 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · Hosting My First Local AI: The Ollama Experiment</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#7c5cff" href="/categories/preparatory-homelab-hiatus/">Preparatory Homelab hiatus</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#f28b4b" href="/tags/ollama/">Ollama</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#ef5da8" href="/tags/local-ai/">Local Ai</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/open-webui/">Open WebUI</a>
+</div><h1>Hosting My First Local AI: The Ollama Experiment</h1><img src="/images/local-ai.png" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-the-research-phase">🔍 The Research Phase</a></li>
+    <li><a href="#-setting-up-ollama">🧠 Setting Up Ollama</a></li>
+    <li><a href="#-adding-a-gui-with-open-webui">💻 Adding a GUI with Open WebUI</a></li>
+    <li><a href="#-choosing-the-right-ai-model">🧩 Choosing the Right AI Model</a></li>
+    <li><a href="#-whats-new-in-docker-ai">⚙️ What’s New in Docker AI</a></li>
+    <li><a href="#-lessons-learned">🧩 Lessons Learned</a></li>
+    <li><a href="#-helpful-resources">📘 Helpful Resources</a></li>
+    <li><a href="#-whats-next">⏭️ What’s Next</a></li>
+    <li><a href="#-final-thoughts">✨ Final Thoughts</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>Just like I mentioned in my previous post, I’m currently using Docker
+Desktop as my “temporary” setup environment until I get my main machine
+back. Since the installation was already done, I decided it was finally
+time to move on to something more exciting.</p>
+<p>The first idea that came to mind was hosting an AI model locally. In the
+long run, one of my goals is to have my own personal AI
+assistant—something that can understand my workflow, help me organize my
+ideas, and run completely offline. Naturally, that meant I had to start
+by figuring out how to host AI models myself.</p>
+<p>So, I began researching.</p>
+<h2 id="-the-research-phase">🔍 The Research Phase</h2>
+<p>After spending a few days going down the rabbit hole, I narrowed my
+options down to three main tools:</p>
+<p>Ollama – known for its simplicity and efficient local AI model
+management.</p>
+<p>Hugging Face – massive library, great for experimentation, but heavier
+to set up locally.</p>
+<p>LM Studio – desktop-based and beginner-friendly, but more limited for
+integration and Docker use.</p>
+<p>Each had its pros and cons, but after comparing them carefully, I ended
+up choosing—drumroll please—Ollama.</p>
+<p>The deciding factor was flexibility. Ollama supports a wide range of
+open-source models, integrates nicely with Docker, and runs well even on
+mid-tier GPUs. For someone like me, who’s still early in their home lab
+and AI journey, it felt like the best balance between accessibility and
+control.</p>
+<h2 id="-setting-up-ollama">🧠 Setting Up Ollama</h2>
+<p>After making my decision, I started looking for the Docker command to
+pull and run Ollama. Since I wanted to use my GPU for faster inference,
+I made sure to use the GPU-enabled version of the Docker image. The
+process went smoothly—it pulled the image, spun up the container, and
+just like that, Ollama was up and running.</p>
+<p>There was only one catch: Ollama runs entirely from the terminal.</p>
+<p>Now, I don’t mind using the terminal—especially while learning Linux—but
+it still felt a little inconvenient for managing multiple models or
+having conversations. I wanted something with a GUI (Graphical User
+Interface), so I started searching again.</p>
+<p>That’s when I discovered Open WebUI.</p>
+<h2 id="-adding-a-gui-with-open-webui">💻 Adding a GUI with Open WebUI</h2>
+<p>From what I found, Open WebUI is a sleek, browser-based interface that
+connects to your local Ollama instance. It gives you a proper chat-style
+environment, lets you switch between models, and even saves your
+previous sessions—all while running entirely on your machine.</p>
+<p>Excited by the discovery, I pulled it using Docker and linked it to
+Ollama. The setup was surprisingly simple. Within minutes, I had a
+functional local AI chat environment that looked almost like ChatGPT—but
+completely offline and under my control.</p>
+<h2 id="-choosing-the-right-ai-model">🧩 Choosing the Right AI Model</h2>
+<p>Once everything was running, the next question was: which model should I
+use?</p>
+<p>I started by testing Mistral, a popular lightweight model known for its
+speed and efficiency. It worked well for casual tasks, but I later came
+across Qwen 3, which was said to be more balanced—smarter responses
+without a big performance hit.</p>
+<p>Curious, I pulled Qwen 3 using Ollama and immediately noticed a
+difference. The model handled context better and felt more “aware” of
+what I was asking. Since then, Qwen 3 has become my go-to model for most
+tasks.</p>
+<h2 id="-whats-new-in-docker-ai">⚙️ What’s New in Docker AI</h2>
+<p>Recently, I came across something interesting: Docker has introduced a
+new AI integration that allows users to pull and use models directly
+within Docker itself—no separate setups needed. This could make running
+local AI models much more seamless.</p>
+<p>While I haven’t tried this feature yet, I can see how it would simplify
+things for many people, especially beginners. Personally, though, I
+prefer the flexibility that comes with running Ollama separately—it
+gives me more control over system prompts, configurations, and model
+behavior.</p>
+<h2 id="-lessons-learned">🧩 Lessons Learned</h2>
+<p>Research matters. Even if it takes time, understanding your options
+saves you from frustration later.</p>
+<p>Simplicity wins. Ollama’s clean setup helped me focus on experimenting
+instead of troubleshooting.</p>
+<p>Documentation &gt; Guesswork. I learned to trust official docs and
+reliable community posts instead of random snippets online.</p>
+<h2 id="-helpful-resources">📘 Helpful Resources</h2>
+<p>If you’re thinking about trying this yourself, here are some resources
+that helped me:</p>
+<p>-Ollama Official Website – Setup and model downloads.</p>
+<p>-Open WebUI on GitHub – Instructions for installation and customization.</p>
+<p>-Docker Docs – For understanding container setup basics.</p>
+<p>-Qwen 3 Model Card – Model details and usage guide.</p>
+<h2 id="-whats-next">⏭️ What’s Next</h2>
+<p>My next step will be to integrate Ollama with n8n, so I can automate
+some workflows using local AI. I also plan to experiment with adding
+some voice interaction down the road.</p>
+<h2 id="-final-thoughts">✨ Final Thoughts</h2>
+<p>This phase of my journey taught me that building something powerful
+doesn’t always require expensive tools or cloud services. With the right
+setup and patience, you can create something incredible right from your
+own machine.</p>
+<p>It might have started as just a curiosity—but now it feels like the
+beginning of something much bigger.</p>
+</div></div></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

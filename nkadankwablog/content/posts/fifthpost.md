@@ -7,9 +7,9 @@ title = 'The Learning of Linux Commands and the Unexpected Pause'
 +++
  
 
-It seems like lately, nothing ever goes exactly as planned—but that’s alright. Like I said in my previous post, the next phase in my home lab journey was to learn how to navigate Linux and get comfortable using the command line. I’ve been making steady progress with that… though things took an unexpected turn.
+The next phase of my homelab journey was supposed to be simple: spend time with Linux, get comfortable in the terminal, and build confidence one command at a time. I made progress—but the conditions changed before I could settle into the routine.
 
-Due to some personal reasons, I had to lend my main computer to a friend. So for now, my hands-on experiments with the home lab have been temporarily paused. But fret not—this is just another small hurdle on the road.
+I had to lend my main computer to a friend, which paused the hands-on work. I did not want that to become a pause in learning, though, so I looked for a smaller and more realistic place to continue.
 
 Instead of stopping completely, I decided to set up a “pre-homelab environment”-called Preparatory Homelab hiatus- on my personal laptop using Docker Desktop. This setup allows me to keep learning and experimenting while I wait to get my hardware back.
 

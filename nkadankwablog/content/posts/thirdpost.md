@@ -6,139 +6,33 @@ tags = ['SBCs', 'RaspberryPi', 'Mini PC']
 title = 'When Research Meets Reality: My Unexpected Home Lab Setup?'
 +++
 
+Once I knew I wanted a home lab, the next question was unavoidable: what would actually run it?
 
+I could not use my old laptop at the time, so I compared two options: a single-board computer (SBC) and a mini PC. I was drawn to the Raspberry Pi because I had used one at school. It felt familiar, compact, and like the obvious first choice.
 
-As I mentioned in my [previous blog post](#), I started off doing a deep
-dive into what I’d need to get started with my home lab journey. I
-joined communities, watched videos, and read a ton of beginner guides.
-It wasn’t long before I hit the first fork in the road:
+## Looking past the obvious option
 
-> **“What kind of hardware am I going to use for my home lab?”**
+The more I researched, the more the decision changed. Newer Raspberry Pi models were already expensive for my budget, and the cost did not stop at the board. A power supply, storage, cooling, enclosure, and other accessories quickly changed the total.
 
-I quickly ruled out using my old laptop because I was currently far from
-home and couldn’t access it. That left me with two main options: an SBC
-(Single-Board Computer) or a mini PC. Naturally, I was drawn toward
-SBCs—mainly because I’d used a Raspberry Pi back in school and had fond
-memories of it.
+I used Gemini to create a broad comparison of SBCs and mini PCs in a similar price range, then worked through the options myself: processor and memory, operating-system support, power use, expansion, availability, and the cost of the extras that do not appear in the first price tag. Used mini PCs, especially Dell OptiPlex systems, started to look like a much more practical alternative.
 
-But that nostalgia didn’t last long.
+## The unexpected answer
 
-When I checked the prices, reality hit hard. Raspberry Pis—especially
-the newer models—were way above my budget. Sure, I could have settled
-for a cheaper model, but in my mind, if I compromised now, I might not
-be able to do everything I planned. Worse, I’d likely have to upgrade
-sooner than expected, which would cost even more in the long run.
+Then a friend offered to sell an old laptop that had been sitting unused. It had battery problems and an unactivated Windows install, but the price was lower than the SBC and mini-PC options I had been considering. I replaced the battery, installed an SSD I already had, activated and updated Windows, and suddenly had a machine to learn on.
 
-Another reason I was leaning toward SBCs was that a friend of mine was
-working on a similar project using a Raspberry Pi. It felt like the
-right move. And just like that, I’d made up my mind.
+It was not the small, purpose-built server I had imagined. It was better for my situation: affordable, available, and ready for experiments.
 
-> **“I’m going with a Raspberry Pi for this project.”**
+## Resources I used
 
-...or so I thought.
+- Gemini for an initial SBC and mini-PC comparison
+- YouTube: Techno Tim, TechHut, and Christian Lempa
+- r/homelab and other community discussions
+- Used-hardware listings on Facebook Marketplace, eBay, and local groups
 
-Suddenly, a new question popped into my head:
+## What I learned
 
-> **“Why am I limiting myself to just the Raspberry Pi?”**
+- Familiar hardware is not automatically the best hardware.
+- The complete cost matters more than the first price I see.
+- Patience can reveal an option that fits better than the one I originally wanted.
 
-Cue another research spiral.
-
-I fired up Google’s Gemini and asked it to generate a comparison report
-on various SBCs and mini PCs that were in the same price range—or
-cheaper—than the Raspberry Pi. What I got was a **50-page report**
-filled with hardware I didn’t even know existed. Still, I stayed focused
-on the SBCs. I was drawn to their size, weight, and portability.
-
-For days, I went deep into researching each SBC in the report: their
-specs, pricing, OS compatibility, power requirements—you name it.
-Eventually, I narrowed it down to three options.
-
-But just as I was figuring out how to start saving up, I had another
-realization:
-
-**“The SBCs themselves aren’t that expensive... but the addons? That’s
-where the real cost is.”**
-
-To get the performance and expandability I wanted, I’d need
-accessories—PSUs, SD cards, heatsinks, enclosures—and they all added up
-quickly. That’s when I started thinking about the “all-in-one”
-alternative: mini PCs.
-
-I looked into used mini PCs and, to my surprise, found several options
-that were actually cheaper than the full SBC setup I had planned. I
-bookmarked a few Dell OptiPlex listings—mainly because they were the
-most available and affordable.
-
-But then life threw me a curveball.
-
-I visited a friend who had been complaining about his old laptop for
-months. It had battery issues, Windows was deactivated (so no updates),
-and it just felt “done” to him. Half-jokingly, I offered to buy it from
-him—and to my surprise, **he immediately agreed**.
-
-We negotiated the price, and I ended up buying it for way less than both
-the SBC and mini PC options I had been researching. I replaced the
-battery, installed an SSD I already had, activated Windows, and fully
-updated the system.
-
-**And just like that, I had my home lab hardware.**
-
-## 🧠 Lessons Learned
-
-> **Don’t be so fixated on past experiences.** Just because something
-> worked for you before doesn’t mean it’s the best option now.
->
-> **Don’t rush decisions.** Sometimes slowing down leads you to a
-> better—and cheaper—solution.
-
-## 📚 Resources Used
-
-If you’re on a similar journey and looking to research hardware or plan
-your own home lab, these are some of the resources I found incredibly
-helpful:
-
-> **Google Gemini** – Used to generate a comprehensive report comparing
-> SBCs and mini PCs.
->
-> **YouTube Channels:**
->
-> Techno Tim – What is a Home Lab and How to Start
->
-> TechHut – 5 Reasons Everyone Needs a Home Server
->
-> Christian Lempa – How to Start Your HomeLab Journey
->
-> **Reddit communities** like r/homelab – For advice, feedback, and
-> inspiration.
->
-> **Used hardware marketplaces** – Facebook Marketplace, eBay, and local
-> tech groups.
-
-## 🔧 What’s Next?
-
-Now that I finally have the hardware ready, here’s what’s coming up in
-the next phase of my journey:
-
-> Install and test Linux distros for the home lab.
->
-> Set up basic services (e.g., file sharing, backups, and monitoring).
->
-> Explore containerization (Docker is up first!).
->
-> Gradually build toward automating parts of my setup.
-
-I’ll be documenting every step and lesson I learn—successes and failures
-included.
-
-## 💭 Final Thoughts
-
-This whole experience reminded me that flexibility and patience can go a
-long way. I spent weeks researching the “ideal” solution, only for a
-cheaper and better option to fall into my lap unexpectedly. And you know
-what? That’s okay.
-
-So if you’re on your own home lab journey, take your time, stay curious,
-and don’t stress too much about getting everything perfect from the
-start.
-
-We’ll figure it out as we go. 🙌
+Next, I needed to decide which operating system would give this unexpected server the right foundation.

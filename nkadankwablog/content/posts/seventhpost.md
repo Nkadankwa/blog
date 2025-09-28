@@ -6,15 +6,9 @@ tags = ['Nextcloud', 'Docker', 'SSD']
 title = 'Fixing Mounting Issues – A Deeper Dive Into the Solution'
 +++
 
-When the portable cloud idea collapsed, I knew the root cause wasn’t the
-tools I used but the way the SSD behaved across different systems. The
-mounting issues became the biggest obstacle, and the only way forward
-was to understand why the environment broke every time I tried to move
-it between Windows, Linux, and WSL. What looked like a simple mismatch
-turned out to be a chain of conflicts involving file systems,
-permissions, Docker volume behavior, and how each platform interacted
-with removable storage. The more I examined the entire setup, the more
-research made me think that the entire strategy needed to change
+When the portable-cloud idea collapsed, I did not want to dismiss it as a tool failure. The real issue was how the SSD behaved across Windows, Linux, and WSL. To move forward, I needed to understand the chain of file systems, permissions, Docker volumes, and removable-storage behaviour that made the environment break.
+
+The research led to a larger conclusion: the strategy, not just the mount point, needed to change.
 
 ## **Mounting Issues – The Core Problem**
 

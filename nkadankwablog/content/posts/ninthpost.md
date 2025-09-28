@@ -6,18 +6,9 @@ tags = ['Ollama', 'Local Ai', 'Open WebUI']
 title = 'Hosting My First Local AI: The Ollama Experiment'
 +++
 
-Just like I mentioned in my previous post, I’m currently using Docker
-Desktop as my “temporary” setup environment until I get my main machine
-back. Since the installation was already done, I decided it was finally
-time to move on to something more exciting.
+Docker Desktop had become my temporary lab while I waited for my main machine. Once the basics were working, I wanted to try something more ambitious: hosting an AI model locally.
 
-The first idea that came to mind was hosting an AI model locally. In the
-long run, one of my goals is to have my own personal AI
-assistant—something that can understand my workflow, help me organize my
-ideas, and run completely offline. Naturally, that meant I had to start
-by figuring out how to host AI models myself.
-
-So, I began researching.
+The long-term idea is a private assistant that can fit into my workflow, help organise ideas, and run without depending entirely on a cloud service. Before I could build toward that, I needed to understand the local-model options and the trade-offs behind them.
 
 ## 🔍 The Research Phase ##
 

@@ -1,0 +1,171 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · Why I Chose Baserow Over Airtable and Others</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#7c5cff" href="/categories/preparatory-homelab-hiatus/">Preparatory Homelab hiatus</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#2696ff" href="/tags/docker/">Docker</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/baserow/">Baserow</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/supabase/">Supabase</a>
+</div><h1>Why I Chose Baserow Over Airtable and Others</h1><img src="/images/storagebattle.jpg" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#main-journey"><strong>Main Journey</strong></a></li>
+        <li><a href="#challenges"><strong>Challenges</strong></a></li>
+        <li><a href="#lessons"><strong>Lessons</strong></a></li>
+        <li><a href="#resources"><strong>Resources</strong></a></li>
+        <li><a href="#whats-next"><strong>What’s Next</strong></a></li>
+        <li><a href="#final-thoughts"><strong>Final Thoughts</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></aside><div class="article-content"><p>I needed a data layer for my automation setup, and the choice came down
+to Airtable, Notion, Supabase, and Baserow. I wasn’t looking for
+something fancy. I wanted something local, predictable, and easy to
+automate. After comparing options and watching a ridiculous number of
+YouTube tutorials, I settled on Baserow.</p>
+<h3 id="main-journey"><strong>Main Journey</strong></h3>
+<p>I started by comparing what each tool actually gives you. Airtable was
+the obvious first pick because everyone uses it in automation tutorials.
+It has a clean UI, lots of templates, and the videos online make
+everything look simple. But the more I researched, the more I realised
+it wasn’t going to work for what I want long-term.</p>
+<p>My plans depend on local-first systems. I want everything running on my
+own hardware, without depending on external API limits or outages.
+Airtable immediately fell off the list because it’s not self-hosted.
+Notion had the same issue. As soon as the automation load increases,
+you’re stuck with rate limits you can’t bypass.</p>
+<p>Supabase was the next option. The backend is strong, but the UX wasn’t
+what I wanted. The table interface feels like a developer tool, not
+something I can plug into fast workflows. I needed a database that
+behaves like a spreadsheet and still gives me a structured API.</p>
+<p>This is where Baserow started to look better. Every YouTube tutorial on
+Baserow shows the exact style I work well with:</p>
+<blockquote>
+<p>Docker-based setup</p>
+</blockquote>
+<blockquote>
+<p>Simple workspace layout</p>
+</blockquote>
+<blockquote>
+<p>Spreadsheet-style tables
+Clear API</p>
+</blockquote>
+<blockquote>
+<p>Easy schema edits
+Good integration with automation tools</p>
+</blockquote>
+<p>Most of the Airtable tutorials felt like they were meant for no-code
+dashboards, not backend-heavy automation. The Baserow videos focused on
+local hosting, API usage, and real workflows. That matched what I
+needed.</p>
+<p>When I saw creators actually building self-hosted systems—running
+Baserow locally, pairing it with n8n, pushing data, pulling rows, and
+doing file uploads—I realised the teaching style made the decision for
+me. The Baserow tutorials were slower, more technical, and focused on
+things that matter to builders: endpoints, tokens, field IDs,
+networking. That was exactly what I wanted.</p>
+<p>I test-installed everything in Docker, explored the UI, checked the API
+responses, and tried a few manual calls. Baserow just felt right.</p>
+<h3 id="challenges"><strong>Challenges</strong></h3>
+<p>Even though Baserow won the comparison, the setup wasn’t perfect.</p>
+<blockquote>
+<p>Airtable had the smoothest tutorials but no local hosting.</p>
+</blockquote>
+<blockquote>
+<p>Notion had the nicest UI but the worst automation flexibility.</p>
+</blockquote>
+<blockquote>
+<p>Supabase had strong infrastructure but a mismatched workflow style.</p>
+</blockquote>
+<blockquote>
+<p>Baserow had the workflow I wanted but needed proper configuration to behave well in Docker.</p>
+</blockquote>
+<p>The main challenges were around understanding which tutorials applied to
+my use case. Airtable videos focus on drag-and-drop workflows, Notion
+videos focus on templates, and Supabase videos assume you want to build
+an app. Baserow videos assume you want a self-hosted data engine. That
+difference added extra learning in the beginning.</p>
+<p>I also had to get used to the structured IDs, the API rules, and the way
+Baserow handles uploads. Nothing major, but definitely different from
+Airtable’s UI-only workflow.</p>
+<h3 id="lessons"><strong>Lessons</strong></h3>
+<p>A few things became clear during the decision phase:</p>
+<blockquote>
+<p>Tutorials shape the learning curve more than the documentation.</p>
+</blockquote>
+<blockquote>
+<p>Airtable is great for simple public workflows but bad for long-term scalability.</p>
+</blockquote>
+<blockquote>
+<p>Notion isn’t built for automation-heavy setups.</p>
+</blockquote>
+<blockquote>
+<p>Supabase is powerful but overkill for this type of content system.</p>
+</blockquote>
+<blockquote>
+<p>Baserow gives you control if you’re willing to handle the backend.</p>
+</blockquote>
+<blockquote>
+<p>Local-first tools narrow your options, but the trade-off gives you full ownership.</p>
+</blockquote>
+<p>Most importantly, I realised that choosing a platform isn’t just about
+features. It’s about how well the community and tutorials align with the
+way you learn.</p>
+<h3 id="resources"><strong>Resources</strong></h3>
+<p>The main things that helped me decide:</p>
+<blockquote>
+<p>YouTube tutorials focused on self-hosting
+Baserow’s API docs for automation examples</p>
+</blockquote>
+<blockquote>
+<p>A few Reddit threads comparing Baserow and Airtable
+Docker setup guides
+Random GitHub issues that explained the structure of Baserow’s backend</p>
+</blockquote>
+<p>These were more practical than the official comparison charts.</p>
+<h3 id="whats-next"><strong>What’s Next</strong></h3>
+<p>Now that I’ve settled on Baserow, the next steps are:</p>
+<blockquote>
+<p>Setting up the full Docker stack</p>
+</blockquote>
+<blockquote>
+<p>Connecting n8n to Baserow</p>
+</blockquote>
+<blockquote>
+<p>Creating tables for content, media files, and workflow status</p>
+</blockquote>
+<blockquote>
+<p>Testing uploads and row creation</p>
+</blockquote>
+<blockquote>
+<p>Building the first automated posting pipeline</p>
+</blockquote>
+<p>The goal is to get a complete automation loop running end-to-end.</p>
+<h3 id="final-thoughts"><strong>Final Thoughts</strong></h3>
+<p>Choosing Baserow wasn’t about it being perfect. It was about it being
+the best fit for my workflow style and my long-term plan. Airtable and
+Notion are great tools, but their ecosystems don’t match the local-first
+automation setup I’m building. Baserow gives me control, room to grow,
+and the exact type of tutorials that help me move faster.</p>
+</div></div><section class="related"><h2>Keep exploring</h2><div class="mini-grid"><a class="mini-card" href="/posts/tenthpost/"><h3>My First n8n &amp; Ollama Experiment (and the Telegram Bot Mess)</h3><time>Sep 8, 2025</time></a><a class="mini-card" href="/posts/seventhpost/"><h3>Fixing Mounting Issues – A Deeper Dive Into the Solution</h3><time>Aug 18, 2025</time></a><a class="mini-card" href="/posts/sixthpost/"><h3>The Portable Cloud Experiment – A Failed Attempt</h3><time>Aug 11, 2025</time></a></div></section></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

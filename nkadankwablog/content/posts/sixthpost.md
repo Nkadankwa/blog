@@ -6,16 +6,9 @@ tags = ['Nextcloud', 'Docker', 'SSD']
 title = 'The Portable Cloud Experiment – A Failed Attempt'
 +++
 
-I started this experiment because I wanted a setup that felt consistent
-across all my devices. My tools were simple enough—Nextcloud for
-structured storage and productivity, Syncthing for distributed syncing,
-and Tailscale for secure remote access—and I thought that if I combined
-them in the right way, I could create a portable cloud that lived
-entirely on an external SSD. I imagined plugging that SSD into any
-machine, running Docker, and having the entire environment spin up
-instantly without depending on online services or complicated
-migrations. The idea was clean and appealing, especially because I moved
-between machines often and used a mix of Windows and Linux.
+I wanted a setup that felt consistent across all my devices. Nextcloud would handle structured storage and productivity, Syncthing would keep files in sync, and Tailscale would provide secure remote access. In theory, putting that environment on an external SSD would let me plug into any machine, start Docker, and carry the same private cloud with me.
+
+It was an appealing idea because I move between Windows and Linux machines often. It was also the kind of idea that only reveals its hidden assumptions when you try to make it real.
 
 But as the project stretched on, I realized the weakest part of the
 setup wasn’t the tools themselves. It was the assumption that I could
