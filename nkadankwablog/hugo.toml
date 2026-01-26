@@ -3,6 +3,12 @@ languageCode = 'en-us'
 title = 'Nkadankwa Blog'
 theme="Blonde" 
 [params]
+  author = "Nkadankwa"
+  tagline = "Build. Learn. Improve. Repeat."
+  intro = "A personal blog about home labs, self-hosting, and figuring things out one project at a time."
+  heroImage = "/images/first_step.jpg"
+  [params.newsletter]
+    enabled = false # Set true only after adding a form action/provider.
   paginator_pages = 10
   mainSections = ['posts']
   base_color = "bg-gray-800"
@@ -34,12 +40,7 @@ theme="Blonde"
     url = '/posts/'
     weight = 20
   [[menu.main]]
-    identifier = 'tags'
-    name = 'Tags'
-    url = '/tags/'
-    weight = 30
-  [[menu.main]]
-    identifier = 'categories'
-    name = 'Categories'
-    url = '/categories/'
+    identifier = 'explore'
+    name = 'Explore'
+    url = '/explore/'
     weight = 40

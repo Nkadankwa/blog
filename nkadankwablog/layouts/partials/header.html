@@ -1,0 +1,7 @@
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="{{ .Site.Home.RelPermalink }}"><span class="brand-mark">{{ .Site.Params.brandIcon | default "</>" }}</span><span>{{ .Site.Params.author | default .Site.Title }}</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu">{{ range .Site.Menus.main }}<a class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>{{ end }}<a class="{{ if eq .RelPermalink "/about/" }}active{{ end }}" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>

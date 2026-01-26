@@ -1,0 +1,14 @@
+# Give any category or tag a colour here. Reusing a colour produces a Hugo build warning.
+entries:
+  - term: Homelab
+    color: "#39d98a"
+  - term: Preparatory Homelab hiatus
+    color: "#7c5cff"
+  - term: Docker
+    color: "#2696ff"
+  - term: Ollama
+    color: "#f28b4b"
+  - term: Local Ai
+    color: "#ef5da8"
+  - term: n8n
+    color: "#ff6d3b"

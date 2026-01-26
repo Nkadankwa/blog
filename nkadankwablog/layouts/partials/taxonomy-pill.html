@@ -1,0 +1,3 @@
+{{ $term := .term }}{{ $color := "#385266" }}{{ $taxonomyColors := index site.Data "taxonomy-colors" }}
+{{ range $taxonomyColors.entries }}{{ if eq (lower .term) (lower $term) }}{{ $color = .color }}{{ end }}{{ end }}
+<a class="taxon-pill" style="--taxon-color:{{ $color }}" href="{{ .url }}">{{ $term }}</a>
