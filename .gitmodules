@@ -1,0 +1,4 @@
+[submodule "nkadankwablog/public"]
+	path = nkadankwablog/public
+	url = https://github.com/Nkadankwa/nkadankwa.github.io.git
+	branch = main
