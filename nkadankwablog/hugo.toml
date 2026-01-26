@@ -1,0 +1,45 @@
+baseURL = 'https://nkadankwa.github.io/'
+languageCode = 'en-us'
+title = 'Nkadankwa Blog'
+theme="Blonde" 
+[params]
+  paginator_pages = 10
+  mainSections = ['posts']
+  base_color = "bg-gray-800"
+  darkmode = "dark"
+
+  [params.post]
+
+    thumbnail = true
+    noimage = true
+    thumbnail_height = "h-48"
+    thumbnail_width = "w-full" 
+    description = "200"
+  [params.widgets]
+    display = true
+    widgets = ["search", "category", "recent"]
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'categories'
+    name = 'Categories'
+    url = '/categories/'
+    weight = 40
