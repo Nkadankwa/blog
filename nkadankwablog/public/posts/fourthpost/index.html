@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · From Proxmox Dreams to Ubuntu Reality</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#39d98a" href="/categories/homelab/">Homelab</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/linux/">Linux</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/proxmox/">Proxmox</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/ubuntu/">Ubuntu</a>
+</div><h1>From Proxmox Dreams to Ubuntu Reality</h1><div class="article-meta"><span>July 28, 2025</span><span>◷ 1 min read</span><span>Updated Jul 28, 2025</span></div><img src="/images/os-options.jpg" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#changing-course">Changing course</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>With hardware sorted, I reached the next big choice: the operating system. Proxmox kept appearing in homelab guides, and I understood why. It is capable, popular, and built for the virtualised setup I hoped to grow into.</p>
+<p>The installation itself went smoothly. The problem appeared afterwards. My internet connection relies on a captive portal, and the combination of missing Wi-Fi drivers, no easy way to authenticate, and limited access to the packages I needed turned a simple install into a loop.</p>
+<h2 id="changing-course">Changing course</h2>
+<p>I tried preparing drivers on another machine and moving them over manually. It did not solve the problem. Eventually I chose Ubuntu instead—not because Proxmox is a bad tool, but because Ubuntu fit the reality of my network and my current experience better.</p>
+<p>That decision gave me a clearer plan: learn the terminal, filesystem, package management, SSH, and Docker before layering more infrastructure on top.</p>
+<p>Good tools still need the right environment. Letting go of Plan A was not failure; it was choosing a foundation I could actually understand and maintain.</p>
+</div></div></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

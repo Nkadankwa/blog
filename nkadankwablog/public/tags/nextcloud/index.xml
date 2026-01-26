@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nextcloud on Nkadankwa Blog</title>
+    <link>http://localhost:1313/tags/nextcloud/</link>
+    <description>Recent content in Nextcloud on Nkadankwa Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Aug 2025 14:53:16 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nextcloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing Mounting Issues – A Deeper Dive Into the Solution</title>
+      <link>http://localhost:1313/posts/seventhpost/</link>
+      <pubDate>Mon, 18 Aug 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/seventhpost/</guid>
+      <description>&lt;p&gt;When the portable-cloud idea failed, I stopped treating the SSD as the problem and started looking at the roles I had given everything. The drive was being asked to behave like portable storage, a Docker volume, and the home for a database-backed service at the same time.&lt;/p&gt;&#xA;&lt;p&gt;Windows, WSL, and Linux all mounted it differently. That meant changing paths, inconsistent permissions, and containers that could not reliably find the data they needed. Nextcloud needed stability; the SSD was built to move.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Portable Cloud Experiment – A Failed Attempt</title>
+      <link>http://localhost:1313/posts/sixthpost/</link>
+      <pubDate>Mon, 11 Aug 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/sixthpost/</guid>
+      <description>&lt;p&gt;I wanted a cloud I could carry: an external SSD with Nextcloud, Syncthing, and Tailscale ready to run whenever I moved between machines. The idea was appealing—plug it in, start Docker, and keep the same environment everywhere.&lt;/p&gt;&#xA;&lt;p&gt;Syncthing and Tailscale behaved well. Nextcloud did not. Its database, permissions, and storage expectations need a stable home. Windows, WSL, and Linux mounted the SSD differently; paths changed, permissions changed, and Docker volumes became unpredictable.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

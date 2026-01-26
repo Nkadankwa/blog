@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Preparatory Homelab Hiatus on Nkadankwa Blog</title>
+    <link>http://localhost:1313/categories/preparatory-homelab-hiatus/</link>
+    <description>Recent content in Preparatory Homelab Hiatus on Nkadankwa Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Sep 2025 14:53:16 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/preparatory-homelab-hiatus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why I Chose Baserow Over Airtable and Others</title>
+      <link>http://localhost:1313/posts/twelvethpost/</link>
+      <pubDate>Mon, 22 Sep 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/twelvethpost/</guid>
+      <description>&lt;p&gt;For my automation project, I needed a data layer that felt local, predictable, and easy to connect to workflows. The shortlist was Airtable, Notion, Supabase, and Baserow.&lt;/p&gt;&#xA;&lt;p&gt;Airtable was tempting because it appears in almost every automation tutorial. Notion looked friendly too. But both rely on hosted services, and that does not fit a local-first system where I want control over availability, limits, and data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-baserow-fit&#34;&gt;Why Baserow fit&lt;/h2&gt;&#xA;&lt;p&gt;Supabase is powerful, but it felt like more infrastructure than I needed for this particular workflow. Baserow landed in the middle: a spreadsheet-style interface, a clear API, Docker-friendly self-hosting, and a model that makes sense alongside n8n.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting Up My First Baserow Stack With YouTube and AI</title>
+      <link>http://localhost:1313/posts/eleventhpost/</link>
+      <pubDate>Mon, 15 Sep 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/eleventhpost/</guid>
+      <description>&lt;p&gt;I wanted a local foundation for content automation: a place to store data, files, and workflow state without handing the whole system to a hosted platform. The stack became Baserow, MinIO, n8n, and local AI tools.&lt;/p&gt;&#xA;&lt;p&gt;YouTube tutorials helped me see the broad shape of Baserow, but the useful learning started when I had to make the pieces talk to each other. Docker networks, environment variables, internal URLs, ports, Redis, PostgreSQL, storage, and API credentials all became less abstract once I had to troubleshoot them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First n8n &amp; Ollama Experiment (and the Telegram Bot Mess)</title>
+      <link>http://localhost:1313/posts/tenthpost/</link>
+      <pubDate>Mon, 08 Sep 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/tenthpost/</guid>
+      <description>&lt;p&gt;My first n8n experiment was meant to be simple: connect a local Ollama model, build a small workflow, then let a Telegram bot talk to it.&lt;/p&gt;&#xA;&lt;p&gt;The first part worked. Docker Desktop ran both containers, n8n connected to Ollama, and I could send prompts through a workflow. It was slow without GPU acceleration, but it was real progress.&lt;/p&gt;&#xA;&lt;h2 id=&#34;where-the-plan-met-the-network&#34;&gt;Where the plan met the network&lt;/h2&gt;&#xA;&lt;p&gt;Telegram needs a public, secure URL for its trigger. My temporary Windows and Docker setup did not have one. I had no router access for port forwarding, no stable external address, and no sensible reason to force a reverse proxy into a network I did not control.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hosting My First Local AI: The Ollama Experiment</title>
+      <link>http://localhost:1313/posts/ninthpost/</link>
+      <pubDate>Mon, 01 Sep 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ninthpost/</guid>
+      <description>&lt;p&gt;With Docker already running on my temporary setup, I wanted to try something more ambitious: hosting an AI model locally. The long-term idea is a private assistant that can fit into my own workflow without depending entirely on a cloud service.&lt;/p&gt;&#xA;&lt;p&gt;I compared Ollama, Hugging Face, and LM Studio. Ollama won because it felt approachable while still fitting the Docker-based environment I was learning.&lt;/p&gt;&#xA;&lt;h2 id=&#34;from-terminal-to-a-usable-workspace&#34;&gt;From terminal to a usable workspace&lt;/h2&gt;&#xA;&lt;p&gt;Ollama came up quickly in a container. The next improvement was Open WebUI, which gave me a browser-based chat interface for managing models and conversations locally. It made the experiment feel less like a command-line test and more like something I could use.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Going Down the Self-Hosted Notes Rabbit Hole</title>
+      <link>http://localhost:1313/posts/eightpost/</link>
+      <pubDate>Mon, 25 Aug 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/eightpost/</guid>
+      <description>&lt;p&gt;I wanted a note-taking system that could grow with me: cross-platform, capable of syncing, comfortable with Markdown, and flexible enough for mind maps and project notes.&lt;/p&gt;&#xA;&lt;p&gt;That led me through Simplenote, Obsidian, Evernote, Joplin, Notion, and Zoho Notebook. I compared them through the things that mattered to me: cost, offline access, privacy, plugins, syncing, and whether the tool could eventually live in a self-hosted setup.&lt;/p&gt;&#xA;&lt;h2 id=&#34;choosing-for-the-long-term&#34;&gt;Choosing for the long term&lt;/h2&gt;&#xA;&lt;p&gt;The shortlist became Obsidian and Joplin. Obsidian has a strong ecosystem, but Joplin felt closer to the system I wanted to build: open source, Markdown-first, self-hostable, and able to sync through services such as Nextcloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fixing Mounting Issues – A Deeper Dive Into the Solution</title>
+      <link>http://localhost:1313/posts/seventhpost/</link>
+      <pubDate>Mon, 18 Aug 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/seventhpost/</guid>
+      <description>&lt;p&gt;When the portable-cloud idea failed, I stopped treating the SSD as the problem and started looking at the roles I had given everything. The drive was being asked to behave like portable storage, a Docker volume, and the home for a database-backed service at the same time.&lt;/p&gt;&#xA;&lt;p&gt;Windows, WSL, and Linux all mounted it differently. That meant changing paths, inconsistent permissions, and containers that could not reliably find the data they needed. Nextcloud needed stability; the SSD was built to move.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Portable Cloud Experiment – A Failed Attempt</title>
+      <link>http://localhost:1313/posts/sixthpost/</link>
+      <pubDate>Mon, 11 Aug 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/sixthpost/</guid>
+      <description>&lt;p&gt;I wanted a cloud I could carry: an external SSD with Nextcloud, Syncthing, and Tailscale ready to run whenever I moved between machines. The idea was appealing—plug it in, start Docker, and keep the same environment everywhere.&lt;/p&gt;&#xA;&lt;p&gt;Syncthing and Tailscale behaved well. Nextcloud did not. Its database, permissions, and storage expectations need a stable home. Windows, WSL, and Linux mounted the SSD differently; paths changed, permissions changed, and Docker volumes became unpredictable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Learning of Linux Commands and the Unexpected Pause</title>
+      <link>http://localhost:1313/posts/fifthpost/</link>
+      <pubDate>Mon, 04 Aug 2025 14:53:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/fifthpost/</guid>
+      <description>&lt;p&gt;Just as I was ready to spend more time with Linux, I had to lend my main computer to a friend. The hands-on homelab work paused, but I did not want the learning to pause with it.&lt;/p&gt;&#xA;&lt;p&gt;So I made a smaller environment on my laptop: Docker Desktop with WSL2 and Ubuntu. It is not the final home lab, but it gives me somewhere safe to test ideas while the main machine is away.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

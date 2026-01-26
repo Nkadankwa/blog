@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · The Portable Cloud Experiment – A Failed Attempt</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#7c5cff" href="/categories/preparatory-homelab-hiatus/">Preparatory Homelab hiatus</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/nextcloud/">Nextcloud</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#2696ff" href="/tags/docker/">Docker</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/ssd/">SSD</a>
+</div><h1>The Portable Cloud Experiment – A Failed Attempt</h1><div class="article-meta"><span>August 11, 2025</span><span>◷ 1 min read</span><span>Updated Aug 11, 2025</span></div><img src="/images/clouderror.jpg" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-boundary-i-found">The boundary I found</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>I wanted a cloud I could carry: an external SSD with Nextcloud, Syncthing, and Tailscale ready to run whenever I moved between machines. The idea was appealing—plug it in, start Docker, and keep the same environment everywhere.</p>
+<p>Syncthing and Tailscale behaved well. Nextcloud did not. Its database, permissions, and storage expectations need a stable home. Windows, WSL, and Linux mounted the SSD differently; paths changed, permissions changed, and Docker volumes became unpredictable.</p>
+<h2 id="the-boundary-i-found">The boundary I found</h2>
+<p>The tools were not the problem. The assumption was. A portable drive can be great storage, but it cannot always be the system itself.</p>
+<p>After enough mount–configure–break–rebuild cycles, I stopped forcing it. The experiment clarified the difference between files that can travel and services that need a stable host. That was disappointing in the moment, but it saved me from spending more time trying to make an unstable design feel normal.</p>
+</div></div></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

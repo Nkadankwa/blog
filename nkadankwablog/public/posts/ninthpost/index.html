@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · Hosting My First Local AI: The Ollama Experiment</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#7c5cff" href="/categories/preparatory-homelab-hiatus/">Preparatory Homelab hiatus</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#f28b4b" href="/tags/ollama/">Ollama</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#ef5da8" href="/tags/local-ai/">Local Ai</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/open-webui/">Open WebUI</a>
+</div><h1>Hosting My First Local AI: The Ollama Experiment</h1><div class="article-meta"><span>September 1, 2025</span><span>◷ 1 min read</span><span>Updated Sep 1, 2025</span></div><img src="/images/local-ai.png" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#from-terminal-to-a-usable-workspace">From terminal to a usable workspace</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>With Docker already running on my temporary setup, I wanted to try something more ambitious: hosting an AI model locally. The long-term idea is a private assistant that can fit into my own workflow without depending entirely on a cloud service.</p>
+<p>I compared Ollama, Hugging Face, and LM Studio. Ollama won because it felt approachable while still fitting the Docker-based environment I was learning.</p>
+<h2 id="from-terminal-to-a-usable-workspace">From terminal to a usable workspace</h2>
+<p>Ollama came up quickly in a container. The next improvement was Open WebUI, which gave me a browser-based chat interface for managing models and conversations locally. It made the experiment feel less like a command-line test and more like something I could use.</p>
+<p>I tried Mistral and later Qwen3. The difference was a useful reminder that “local AI” is not one thing: model choice affects speed, context, hardware needs, and how helpful the system feels.</p>
+<p>The setup is still an experiment, not a finished assistant. But it proved that a private, local model is within reach—and gave me a real foundation for exploring n8n and automation next.</p>
+</div></div></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

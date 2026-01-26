@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · Fixing Mounting Issues – A Deeper Dive Into the Solution</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#7c5cff" href="/categories/preparatory-homelab-hiatus/">Preparatory Homelab hiatus</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/nextcloud/">Nextcloud</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#2696ff" href="/tags/docker/">Docker</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/ssd/">SSD</a>
+</div><h1>Fixing Mounting Issues – A Deeper Dive Into the Solution</h1><div class="article-meta"><span>August 18, 2025</span><span>◷ 1 min read</span><span>Updated Aug 18, 2025</span></div><img src="/images/cloudfix.jpg" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-simpler-split">A simpler split</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>When the portable-cloud idea failed, I stopped treating the SSD as the problem and started looking at the roles I had given everything. The drive was being asked to behave like portable storage, a Docker volume, and the home for a database-backed service at the same time.</p>
+<p>Windows, WSL, and Linux all mounted it differently. That meant changing paths, inconsistent permissions, and containers that could not reliably find the data they needed. Nextcloud needed stability; the SSD was built to move.</p>
+<h2 id="a-simpler-split">A simpler split</h2>
+<p>The solution was less clever than the original idea. The host machine runs the services. The SSD stores data. Docker stays local to the host, while the drive remains portable storage rather than the compute layer.</p>
+<p>Syncthing fits that model well because it watches and syncs files. Tailscale does too because it solves networking. Nextcloud is the exception: it needs a predictable place for its database and internal files.</p>
+<p>This was a useful design lesson. Portability does not mean every part of a system must move. It means being deliberate about what can travel and what needs a stable home.</p>
+</div></div><section class="related"><h2>Keep exploring</h2><div class="mini-grid"><a class="mini-card" href="/posts/sixthpost/"><h3>The Portable Cloud Experiment – A Failed Attempt</h3><time>Aug 11, 2025</time></a></div></section></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

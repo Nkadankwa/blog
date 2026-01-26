@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · My First n8n &amp; Ollama Experiment (and the Telegram Bot Mess)</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#7c5cff" href="/categories/preparatory-homelab-hiatus/">Preparatory Homelab hiatus</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#ff6d3b" href="/tags/n8n/">n8n</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#2696ff" href="/tags/docker/">Docker</a>
+</div><h1>My First n8n &amp; Ollama Experiment (and the Telegram Bot Mess)</h1><div class="article-meta"><span>September 8, 2025</span><span>◷ 1 min read</span><span>Updated Sep 8, 2025</span></div><img src="/images/N8n.png" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#where-the-plan-met-the-network">Where the plan met the network</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>My first n8n experiment was meant to be simple: connect a local Ollama model, build a small workflow, then let a Telegram bot talk to it.</p>
+<p>The first part worked. Docker Desktop ran both containers, n8n connected to Ollama, and I could send prompts through a workflow. It was slow without GPU acceleration, but it was real progress.</p>
+<h2 id="where-the-plan-met-the-network">Where the plan met the network</h2>
+<p>Telegram needs a public, secure URL for its trigger. My temporary Windows and Docker setup did not have one. I had no router access for port forwarding, no stable external address, and no sensible reason to force a reverse proxy into a network I did not control.</p>
+<p>The bot did not happen, but the failure was specific and useful. Local automation can work well inside the lab. Integrations that receive traffic from the internet need stable networking and a deliberate exposure strategy.</p>
+<p>For now, I am keeping the experiments local and saving the public-facing ideas for infrastructure that can support them properly.</p>
+</div></div><section class="related"><h2>Keep exploring</h2><div class="mini-grid"><a class="mini-card" href="/posts/seventhpost/"><h3>Fixing Mounting Issues – A Deeper Dive Into the Solution</h3><time>Aug 18, 2025</time></a><a class="mini-card" href="/posts/sixthpost/"><h3>The Portable Cloud Experiment – A Failed Attempt</h3><time>Aug 11, 2025</time></a></div></section></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>

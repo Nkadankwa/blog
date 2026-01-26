@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131b">
+  <title>Nkadankwa Blog · 🚧 The False Start to My Homelab Journey (Before I Knew What It Was)</title>
+  <link rel="stylesheet" href="/css/nkadankwa.css">
+</head>
+<body>
+<header class="site-header"><div class="shell nav">
+  <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span><span>Nkadankwa</span></a>
+  <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="menu"><a class="" href="/">Home</a><a class="" href="/posts/">Posts</a><a class="" href="/explore/">Explore</a><a class="" href="/about/">About</a></nav>
+  <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+</div></header>
+<script>document.querySelector('.menu-button')?.addEventListener('click',e=>{let n=document.querySelector('.menu');n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',n.classList.contains('open'))});document.querySelector('.theme-toggle')?.addEventListener('click',()=>document.body.classList.toggle('light'));</script>
+<main><div class="reading-progress"></div><article class="shell article"><a class="back" href="/posts/">← All posts</a><div class="article-taxonomy">
+
+<a class="taxon-pill" style="--taxon-color:#39d98a" href="/categories/homelab/">Homelab</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/syncthing/">syncthing</a>
+
+
+<a class="taxon-pill" style="--taxon-color:#385266" href="/tags/wsl2/">WSL2</a>
+</div><h1>🚧 The False Start to My Homelab Journey (Before I Knew What It Was)</h1><div class="article-meta"><span>July 7, 2025</span><span>◷ 2 min read</span><span>Updated Jul 7, 2025</span></div><img src="/images/false_start.jpg" alt="" class="article-image"><div class="article-layout"><aside class="toc"><strong>On this page</strong><nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-first-attempt">The first attempt</a></li>
+    <li><a href="#what-stayed-with-me">What stayed with me</a></li>
+  </ul>
+</nav></aside><div class="article-content"><p>I did not set out to build a homelab. I just wanted my files to follow me between devices without becoming another thing to manage.</p>
+<p>That small problem sent me through Syncthing, Joplin, WSL2, Docker, Nextcloud, and Tailscale. Each tool solved part of the problem, but I was trying to assemble a complete system before I understood the pieces.</p>
+<h2 id="the-first-attempt">The first attempt</h2>
+<p>I tried to turn Docker and WSL2 into a private cloud, with Nextcloud at the centre. It sounded sensible: build something portable now, then move it to future hardware later. In practice, containers failed to start, storage paths became confusing, and VPN conflicts made even basic setup work harder than it should have been.</p>
+<p>The project did not become the cloud I imagined. It did give me a better question: <em>what am I actually trying to build, and why?</em></p>
+<h2 id="what-stayed-with-me">What stayed with me</h2>
+<ul>
+<li>A setup that works on one operating system may not translate neatly to another.</li>
+<li>Documentation matters more than a confident-looking command from a tutorial or AI prompt.</li>
+<li>It is easier to grow a small, stable system than rescue an ambitious, fragile one.</li>
+</ul>
+<p>This was a false start, but not a wasted one. It was the point where “I need my files everywhere” became “I want to understand the infrastructure behind that.”</p>
+</div></div></article><script>addEventListener('scroll',()=>{let h=document.documentElement;document.querySelector('.reading-progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'})</script></main><footer><div class="shell footer"><div><strong>Build. Learn. Improve. Repeat.</strong><p>A personal blog about home labs, self-hosting, and figuring things out one project at a time.</p></div><nav><a href="/">Home</a><a href="/posts/">Posts</a><a href="/explore/">Explore</a></nav><div class="social">◉ &nbsp; in &nbsp; 𝕏 &nbsp; ✉</div></div></footer>
+
+</body></html>
