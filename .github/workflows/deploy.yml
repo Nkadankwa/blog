@@ -31,12 +31,13 @@ jobs:
           extended: true
 
       - name: Build Hugo Site
+        working-directory: ./nkadankwablog
         run: hugo --minify
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./nkadankwablog/public
 
   deploy:
     environment:
