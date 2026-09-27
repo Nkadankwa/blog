@@ -1,29 +1,21 @@
 baseURL = 'https://nkadankwa.github.io/'
 languageCode = 'en-us'
 title = 'Nkadankwa Blog'
-theme="Blonde" 
+enableRobotsTXT = true
+summaryLength = 28
+
 [params]
   author = "Nkadankwa"
   tagline = "Build. Learn. Improve. Repeat."
   intro = "A personal blog about home labs, self-hosting, and figuring things out one project at a time."
   heroImage = "/images/first_step.jpg"
+  description = "Experiments, lessons, and practical notes about home labs, self-hosting, Linux, automation, and learning in public."
+  github = "https://github.com/nkadankwa"
   [params.newsletter]
     enabled = false # Set true only after adding a form action/provider.
-  paginator_pages = 10
-  mainSections = ['posts']
-  base_color = "bg-gray-800"
-  darkmode = "dark"
 
-  [params.post]
-
-    thumbnail = true
-    noimage = true
-    thumbnail_height = "h-48"
-    thumbnail_width = "w-full" 
-    description = "200"
-  [params.widgets]
-    display = true
-    widgets = ["search", "category", "recent"]
+[pagination]
+  pagerSize = 10
 
 [taxonomies]
   category = 'categories'
