@@ -4,8 +4,8 @@
   <h1>This path reached a dead end.</h1>
   <p>The page may have moved, or the link may no longer be valid. The rest of the blog is still here.</p>
   <div class="actions">
-    <a class="button primary" href="{{ "/" | relURL }}">Return home</a>
-    <a class="button ghost" href="{{ "/posts/" | relURL }}">Browse posts</a>
+    <a class="button primary" href="{{ .Site.Home.RelPermalink }}">Return home</a>
+    <a class="button ghost" href="{{ "posts/" | relURL }}">Browse posts</a>
   </div>
 </section>
 {{ end }}

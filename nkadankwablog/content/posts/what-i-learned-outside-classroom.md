@@ -1,5 +1,6 @@
 +++
 date = '2025-11-06T09:00:00+08:00'
+image = '/images/movie-gala-editorial.png'
 title = 'What I learned outside the classroom'
 categories = ['Journal']
 +++

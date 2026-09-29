@@ -2,7 +2,7 @@
 
 date = '2025-12-01T09:00:00+08:00'
 
-image = '/images/open-source-paths-editorial.png'
+image = '/images/homelab-network-cover.png'
 
 title = 'Why I started experimenting with self-hosting'
 

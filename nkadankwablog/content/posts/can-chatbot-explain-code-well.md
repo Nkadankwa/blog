@@ -1,6 +1,6 @@
 +++
 date = '2026-03-12T09:00:00+08:00'
-image = '/images/ai-research-editorial.png'
+image = '/images/chatbot-code-explainer-cover.png'
 title = 'Can a chatbot explain code well? It depends on the question'
 categories = ['My Two Cents']
 tags = ['AI', 'Coding', 'Learning']

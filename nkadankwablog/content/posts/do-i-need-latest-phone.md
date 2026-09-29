@@ -1,5 +1,6 @@
 +++
 date = '2025-10-06T09:00:00+08:00'
+image = '/images/phone-repair-editorial.png'
 title = 'Do I really need the latest phone?'
 categories = ['My Two Cents']
 tags = ['Android', 'Repairability', 'Buying Advice']

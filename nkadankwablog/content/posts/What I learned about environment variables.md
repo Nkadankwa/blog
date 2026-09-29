@@ -1,6 +1,6 @@
 +++
 date = '2026-02-05T09:00:00+08:00'
-image = '/images/java-spring-editorial.png'
+image = '/images/environment-variables-cover.png'
 title = 'What I learned about environment variables'
 categories = ['Journal']
 tags = ['Environment Variables', 'Docker', 'Learning']

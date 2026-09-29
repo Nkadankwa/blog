@@ -1,6 +1,6 @@
 +++
 date = '2026-05-07T09:00:00+08:00'
-image = '/images/mind-graph.png'
+image = '/images/project-reflection-cover.png'
 title = 'What an Axure group project taught me about collaboration'
 categories = ['Journal']
 tags = ['Collaboration', 'Axure RP', 'Student Project']

@@ -1,6 +1,6 @@
 +++
 date = '2026-04-09T09:00:00+08:00'
-image = '/images/first_step.jpg'
+image = '/images/project-reflection-cover.png'
 title = 'An honest check-in on how I feel about my goals'
 categories = ['Journal']
 tags = ['Goals', 'Student Life', 'Learning']

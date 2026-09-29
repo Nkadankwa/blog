@@ -1,6 +1,6 @@
  +++
 date = '2025-09-22T14:53:16+08:00'
-image = '/images/storagebattle.jpg'
+image = '/images/self-hosted-data-choice-cover.png'
 categories = ['Preparatory Homelab hiatus']
 tags = ['Docker', 'Baserow', 'Supabase']
 title = 'Why I Chose Baserow Over Airtable and Others'

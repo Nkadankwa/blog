@@ -1,6 +1,6 @@
 +++
 date = '2026-06-29T09:00:00+08:00'
-image = '/images/mind-graph.png'
+image = '/images/database-planning-cover.png'
 title = 'Three free resources that are helping me learn databases'
 categories = ['Web Finds']
 tags = ['Databases', 'dbdiagram', 'SoloLearn', 'YouTube']

@@ -1,6 +1,6 @@
 +++
 date = '2026-03-23T09:00:00+08:00'
-image = '/images/n8n-baserow.png'
+image = '/images/homelab-network-cover.png'
 title = 'What self-hosting means when you are just beginning'
 categories = ['My Two Cents']
 tags = ['Self-Hosting', 'Nextcloud', 'Learning']

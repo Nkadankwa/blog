@@ -2,7 +2,7 @@
 
 date = '2025-11-03T09:00:00+08:00'
 
-image = '/images/browser-privacy-editorial.png'
+image = '/images/digital-security-cover.png'
 
 title = 'Why do apps keep asking for permissions?'
 

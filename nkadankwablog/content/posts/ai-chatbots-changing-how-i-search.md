@@ -1,5 +1,6 @@
 +++
 date = '2025-10-16T09:00:00+08:00'
+image = '/images/ai-research-editorial.png'
 title = 'Are AI chatbots changing how I search?'
 categories = ['My Two Cents']
 tags = ['AI', 'Search']

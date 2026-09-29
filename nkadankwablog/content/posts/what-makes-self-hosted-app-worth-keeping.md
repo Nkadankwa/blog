@@ -1,6 +1,6 @@
 +++
 date = '2026-09-21T09:00:00+08:00'
-image = '/images/n8n-baserow.png'
+image = '/images/homelab-network-cover.png'
 title = 'What makes a self-hosted app worth keeping?'
 categories = ['My Two Cents']
 tags = ['Self-Hosting', 'Privacy', 'Software']

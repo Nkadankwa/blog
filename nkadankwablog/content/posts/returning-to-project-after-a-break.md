@@ -1,6 +1,6 @@
 +++
 date = '2026-09-10T09:00:00+08:00'
-image = '/images/java-spring-editorial.png'
+image = '/images/project-reflection-cover.png'
 title = 'What returning to a project after a break reveals'
 categories = ['Journal']
 tags = ['Software Design', 'Java', 'Documentation']

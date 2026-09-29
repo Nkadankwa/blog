@@ -1,6 +1,6 @@
 +++
 date = '2026-07-16T09:00:00+08:00'
-image = '/images/storagebattle.jpg'
+image = '/images/file-search-cover.png'
 title = 'WizTree shows me what is using my storage'
 categories = ['Web Finds']
 tags = ['WizTree', 'Windows', 'Storage']

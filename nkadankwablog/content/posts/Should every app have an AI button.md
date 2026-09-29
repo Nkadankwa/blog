@@ -1,6 +1,6 @@
 +++
 date = '2025-12-15T09:00:00+08:00'
-image = '/images/ai-research-editorial.png'
+image = '/images/unnecessary-ai-button-cover.png'
 title = 'Should every app have an AI button?'
 categories = ['My Two Cents']
 tags = ['AI', 'Software Design']

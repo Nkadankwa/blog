@@ -1,6 +1,6 @@
 +++
 date = '2026-02-23T09:00:00+08:00'
-image = '/images/os-options.jpg'
+image = '/images/software-update-cover.png'
 title = 'Why I research Windows updates before installing them'
 categories = ['My Two Cents']
 tags = ['Windows', 'Software Updates', 'Student Life']

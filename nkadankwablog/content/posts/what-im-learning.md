@@ -2,7 +2,7 @@
 
 date = '2025-09-28T09:00:00+08:00'
 
-image = '/images/learning-websites-editorial.png'
+image = '/images/project-reflection-cover.png'
 
 title = 'What I am learning right now'
 

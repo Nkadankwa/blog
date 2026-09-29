@@ -1,6 +1,6 @@
 +++
 date = '2026-08-10T09:00:00+08:00'
-image = '/images/learn-linux.png'
+image = '/images/writing-project-cover-v2.png'
 title = 'Why I document commands that finally work'
 categories = ['Journal']
 tags = ['Documentation', 'Linux', 'Learning']

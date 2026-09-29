@@ -1,6 +1,6 @@
 +++
 date = '2026-03-09T09:00:00+08:00'
-image = '/images/open-source-paths-editorial.png'
+image = '/images/file-search-cover.png'
 title = 'Everything is now part of how I find files on Windows'
 categories = ['Web Finds']
 tags = ['Windows', 'Everything', 'Productivity']

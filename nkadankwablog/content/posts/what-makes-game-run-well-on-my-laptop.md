@@ -1,7 +1,7 @@
 +++
 date = '2026-06-04T09:00:00+08:00'
-image = '/images/os-options.jpg'
-title = 'What makes a game run well on my laptop?'
+image = '/images/laptop-game-performance-cover.png'
+title = 'What makes a game run well on my Laptop?'
 categories = ['My Two Cents']
 tags = ['Gaming', 'Windows']
 +++

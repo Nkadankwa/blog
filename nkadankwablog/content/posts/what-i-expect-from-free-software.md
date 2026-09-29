@@ -1,6 +1,6 @@
 +++
 date = '2026-08-31T09:00:00+08:00'
-image = '/images/open-source-paths-editorial.png'
+image = '/images/software-tools-cover.png'
 title = 'What I expect from free and open-source software'
 categories = ['Web Finds']
 tags = ['Open Source', 'Privacy', 'Software']

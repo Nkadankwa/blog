@@ -1,6 +1,6 @@
 +++
 date = '2026-05-18T09:00:00+08:00'
-image = '/images/os-options.jpg'
+image = '/images/software-tools-cover.png'
 title = 'Why I sometimes prefer a real app to a website'
 categories = ['My Two Cents']
 tags = ['Windows', 'Software Design', 'Local Software']

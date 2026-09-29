@@ -1,6 +1,6 @@
 +++
 date = '2026-02-16T09:00:00+08:00'
-image = '/images/mind-graph.png'
+image = '/images/database-planning-cover.png'
 title = 'How I plan a small database schema before writing SQL'
 categories = ['Journal']
 tags = ['Databases', 'Software Design', 'Learning']

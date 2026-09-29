@@ -1,6 +1,6 @@
 +++
 date = '2026-04-06T09:00:00+08:00'
-image = '/images/open-source-paths-editorial.png'
+image = '/images/deployment-cover.png'
 title = 'Three free ways to publish a personal website'
 categories = ['Web Finds']
 tags = ['Websites', 'GitHub', 'Cloudflare', 'Vercel']

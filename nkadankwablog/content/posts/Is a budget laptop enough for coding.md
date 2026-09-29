@@ -1,6 +1,6 @@
 +++
 date = '2026-01-19T09:00:00+08:00'
-image = '/images/learning-websites-editorial.png'
+image = '/images/budget-coding-laptop-cover.png'
 title = 'Is a budget laptop enough for coding'
 categories = ['Posts']
 tags = ['Coding', 'Hardware', 'Student Life']

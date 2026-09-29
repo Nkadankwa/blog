@@ -1,6 +1,6 @@
 +++
 date = '2025-07-21T14:53:16+08:00'
-image = '/images/sbc_vs_mini_pc.jpg'
+image = '/images/homelab-network-cover.png'
 categories = ['Homelab']
 tags = ['SBCs', 'RaspberryPi', 'Mini PC']
 title = 'When Research Meets Reality: My Unexpected Home Lab Setup?'

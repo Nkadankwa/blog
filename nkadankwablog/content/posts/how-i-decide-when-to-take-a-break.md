@@ -1,6 +1,6 @@
 +++
 date = '2026-03-02T09:00:00+08:00'
-image = '/images/first_step.jpg'
+image = '/images/project-reflection-cover.png'
 title = 'How I know when it is time to take a break'
 categories = ['Journal']
 tags = ['Student Life', 'Learning']

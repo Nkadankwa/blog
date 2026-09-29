@@ -1,6 +1,6 @@
 +++
 date = '2026-08-13T09:00:00+08:00'
-image = '/images/os-options.jpg'
+image = '/images/startup-apps-cover.png'
 title = 'The problem with apps that start themselves'
 categories = ['My Two Cents']
 tags = ['Windows', 'Startup Apps', 'Software']

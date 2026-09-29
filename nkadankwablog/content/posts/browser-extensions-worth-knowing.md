@@ -1,5 +1,6 @@
 +++
 date = '2025-11-10T09:00:00+08:00'
+image = '/images/browser-privacy-editorial.png'
 title = 'Browser extensions worth knowing about'
 categories = ['Web Finds']
 tags = ['Privacy', 'Browser']

@@ -1,6 +1,6 @@
 +++
 date = '2026-08-17T09:00:00+08:00'
-image = '/images/n8n-baserow.png'
+image = '/images/docker-or-direct-install-cover.png'
 title = 'How I decide whether to use Docker or install an app directly'
 categories = ['Posts']
 tags = ['Docker', 'Windows', 'Software']

@@ -1,6 +1,6 @@
 +++
 date = '2026-05-11T09:00:00+08:00'
-image = '/images/java-spring-editorial.png'
+image = '/images/digital-security-cover.png'
 title = 'How I keep secrets out of Git'
 categories = ['Posts']
 tags = ['Git', 'Environment Variables', 'IntelliJ IDEA']

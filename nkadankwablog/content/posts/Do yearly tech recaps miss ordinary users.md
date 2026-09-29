@@ -1,6 +1,6 @@
 +++
 date = '2025-12-11T09:00:00+08:00'
-image = '/images/smart-devices-editorial.png'
+image = '/images/yearly-tech-recap-cover.png'
 title = 'Do yearly tech recaps miss ordinary users?'
 categories = ['My Two Cents']
 tags = ['Technology', 'Buying Advice']

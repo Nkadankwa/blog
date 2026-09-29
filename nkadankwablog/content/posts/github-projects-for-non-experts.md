@@ -1,5 +1,6 @@
 +++
 date = '2025-10-13T09:00:00+08:00'
+image = '/images/open-source-paths-editorial.png'
 title = 'Interesting GitHub projects for non-experts'
 categories = ['Web Finds']
 tags = ['GitHub', 'Open Source']

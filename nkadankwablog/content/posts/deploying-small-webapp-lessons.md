@@ -1,6 +1,6 @@
 +++
 date = '2026-06-08T09:00:00+08:00'
-image = '/images/clouderror.jpg'
+image = '/images/deployment-cover.png'
 title = 'What deploying a small web app taught me about row-level security'
 categories = ['Journal']
 tags = ['Deployment', 'Row-Level Security', 'Student Project']

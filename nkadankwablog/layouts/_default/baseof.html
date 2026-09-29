@@ -2,9 +2,12 @@
 <html lang="{{ .Site.Language.Lang | default "en" }}">
   {{ partial "head.html" . }}
   <body>
+    <script>try{if(localStorage.getItem('nkadankwa-theme')==='light'){document.body.classList.add('light');document.querySelector('meta[name="theme-color"]').content='#eef5f6'}}catch(e){}</script>
     <a class="skip-link" href="#main-content">Skip to content</a>
     {{ partial "header.html" . }}
     <main id="main-content">{{ block "main" . }}{{ end }}</main>
     {{ partial "footer.html" . }}
+    <button class="back-to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg><span>Top</span></button>
+    <script>{const h=document.documentElement,p=document.querySelector('.reading-progress'),b=document.querySelector('.back-to-top'),reduced=matchMedia('(prefers-reduced-motion: reduce)');function updateReadingProgress(){if(!p)return;const available=h.scrollHeight-h.clientHeight;p.style.width=(available?100*h.scrollTop/available:0)+'%'}addEventListener('scroll',updateReadingProgress,{passive:true});b.addEventListener('click',()=>scrollTo({top:0,behavior:reduced.matches?'auto':'smooth'}));updateReadingProgress()}</script>
   </body>
 </html>

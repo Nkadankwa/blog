@@ -1,5 +1,6 @@
 +++
 date = '2025-10-20T09:00:00+08:00'
+image = '/images/movie-gala-editorial.png'
 title = 'A small win I almost overlooked'
 categories = ['Journal']
 tags = ['WeChat Mini Program', 'Student Project']

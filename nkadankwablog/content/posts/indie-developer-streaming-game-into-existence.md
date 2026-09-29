@@ -1,6 +1,6 @@
 +++
 date = '2026-04-13T09:00:00+08:00'
-image = '/images/ai-research-editorial.png'
+image = '/images/indie-game-stream-cover.png'
 title = 'Watching an indie developer stream a game into existence'
 categories = ['Web Finds']
 tags = ['Game Development', 'Twitch', 'Coding']

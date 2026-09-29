@@ -1,5 +1,6 @@
 +++
 date = '2025-11-17T09:00:00+08:00'
+image = '/images/cloud-storage-editorial.png'
 title = 'Is cloud storage actually free?'
 categories = ['My Two Cents']
 tags = ['Cloud Storage', 'Backups']

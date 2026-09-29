@@ -1,6 +1,6 @@
 +++
 date = '2026-05-25T09:00:00+08:00'
-image = '/images/smart-devices-editorial.png'
+image = '/images/subscription-fatigue-cover.png'
 title = 'Are subscriptions making software worse?'
 categories = ['My Two Cents']
 tags = ['Subscriptions', 'Software', 'Gaming']

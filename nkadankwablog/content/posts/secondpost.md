@@ -1,6 +1,6 @@
 +++
 date = '2025-07-14T14:53:16+08:00'
-image = '/images/first_step.jpg'
+image = '/images/homelab-network-cover.png'
 categories = ['Homelab']
 tags = ["Research"]
 title = 'My First Step in Setting Up a Home Lab'
