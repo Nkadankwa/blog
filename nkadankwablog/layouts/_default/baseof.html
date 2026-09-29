@@ -1,3 +1,10 @@
-<!doctype html><html lang="{{ .Site.Language.Lang | default "en" }}">{{ partial "head.html" . }}<body>
-{{ partial "header.html" . }}<main>{{ block "main" . }}{{ end }}</main>{{ partial "footer.html" . }}
-</body></html>
+<!doctype html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+  {{ partial "head.html" . }}
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {{ partial "header.html" . }}
+    <main id="main-content">{{ block "main" . }}{{ end }}</main>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

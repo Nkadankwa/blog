@@ -1,4 +1,4 @@
-baseURL = 'https://nkadankwa.github.io/'
+baseURL = 'https://nkadankwa.github.io/blog/'
 languageCode = 'en-us'
 title = 'Nkadankwa Blog'
 enableRobotsTXT = true

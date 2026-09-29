@@ -1,1 +1,53 @@
-{{ define "main" }}{{ partial "validate-taxonomy-colors.html" . }}<section class="shell explore"><p class="eyebrow">Find exactly what interests you</p><h1>Explore the blog</h1><p class="explore-intro">Browse everything by category or tag. Both live here, compactly.</p><div class="taxonomy-columns"><section><h2>Categories</h2><div class="taxonomy-cloud">{{ range $name, $pages := .Site.Taxonomies.categories }}{{ partial "taxonomy-pill.html" (dict "term" $name "url" $pages.Page.RelPermalink) }}<span class="taxon-count">{{ len $pages }}</span>{{ end }}</div></section><section><h2>Tags</h2><div class="taxonomy-cloud">{{ range $name, $pages := .Site.Taxonomies.tags }}{{ partial "taxonomy-pill.html" (dict "term" $name "url" $pages.Page.RelPermalink) }}<span class="taxon-count">{{ len $pages }}</span>{{ end }}</div></section></div></section>{{ end }}
+{{ define "main" }}
+  {{ partial "validate-taxonomy-colors.html" . }}
+  <section class="shell explore">
+    <p class="eyebrow">Find exactly what interests you</p>
+    <h1>Explore the blog</h1>
+    <p class="explore-intro">Browse everything by category or tag. Tags are grouped by how often they appear.</p>
+    <div class="taxonomy-columns">
+      <section>
+        <h2>Categories</h2>
+        <div class="taxonomy-cloud">
+          {{ range $name, $pages := .Site.Taxonomies.categories }}
+            {{ partial "taxonomy-pill.html" (dict "term" $name "url" $pages.Page.RelPermalink "count" (len $pages)) }}
+          {{ end }}
+        </div>
+      </section>
+      <section class="tag-groups">
+        <h2>Tags</h2>
+        {{ $tags := .Site.Taxonomies.tags.ByCount }}
+        {{ $frequent := where $tags "Count" "ge" 6 }}
+        <details class="tag-dropdown">
+          <summary class="tag-dropdown-trigger">
+            <span>Select a tag</span>
+            <span class="tag-dropdown-chevron" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="tag-dropdown-menu">
+            {{ with $frequent }}
+              <section class="tag-menu-group">
+                <h3>Frequently used</h3>
+                <p>Six or more posts</p>
+                {{ range . }}
+                  <a href="{{ .Page.RelPermalink }}"><span>{{ .Page.Title }}</span><span class="tag-menu-count">{{ .Count }} posts</span></a>
+                {{ end }}
+              </section>
+            {{ end }}
+            {{ range seq 5 -1 1 }}
+              {{ $count := . }}
+              {{ $group := where $tags "Count" "eq" $count }}
+              {{ with $group }}
+                <section class="tag-menu-group">
+                  <h3>Used {{ $count }} {{ if eq $count 1 }}time{{ else }}times{{ end }}</h3>
+                  {{ range . }}
+                    <a href="{{ .Page.RelPermalink }}"><span>{{ .Page.Title }}</span><span class="tag-menu-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</span></a>
+                  {{ end }}
+                </section>
+              {{ end }}
+            {{ end }}
+          </div>
+        </details>
+        <p class="tag-select-help">Tags are grouped by the number of posts using them.</p>
+      </section>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="shell explore terms-page">
+  <p class="eyebrow">Browse the archive</p>
+  <h1>{{ .Title }}</h1>
+  <div class="taxonomy-cloud taxonomy-index">
+    {{ range .Data.Terms.Alphabetical }}
+      {{ partial "taxonomy-pill.html" (dict "term" .Page.Title "url" .Page.RelPermalink) }}
+      <span class="taxon-count">{{ .Count }}</span>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
