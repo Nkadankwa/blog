@@ -32,6 +32,11 @@ summaryLength = 28
     url = '/posts/'
     weight = 20
   [[menu.main]]
+    identifier = 'ai-guides'
+    name = 'AI Guides'
+    url = '/ai-guides/'
+    weight = 30
+  [[menu.main]]
     identifier = 'explore'
     name = 'Explore'
     url = '/explore/'
