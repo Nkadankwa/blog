@@ -1,6 +1,9 @@
 +++
 title = 'AI use guides'
 date = '2026-10-05T12:00:00+08:00'
+weight = 2
+aliases = ['/ai-guides/']
+description = 'Download the adult and teen AI guides, covering privacy, learning, consent and everyday decisions.'
 +++
 
 ## Adult edition: Rules for Using AI

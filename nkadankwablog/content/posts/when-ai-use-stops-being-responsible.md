@@ -68,7 +68,7 @@ That sentence matters to me more than a clever prompt. It leaves a way forward a
 
 ## The two guides
 
-The [adult and teen PDFs are available here]({{< relref "/ai-guides.md" >}}). The adult edition has 14 rules across personal life, work and everyday use, with dos, don'ts, evidence and practical suggestions. The teen edition has 12 rules, fictional situations to practise with and a safety plan. Both have clickable contents and sources beside the rules they support.
+The [adult and teen PDFs are available here]({{< relref "/guides/ai-guides.md" >}}). The adult edition has 14 rules across personal life, work and everyday use, with dos, don'ts, evidence and practical suggestions. The teen edition has 12 rules, fictional situations to practise with and a safety plan. Both have clickable contents and sources beside the rules they support.
 
 I kept the editions separate because the person reading them changes what needs explaining. An employee deciding whether to upload a work document and a teenager receiving an unsettling message have different decisions in front of them.
 

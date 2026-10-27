@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="reading-progress"></div>
+<article class="shell article article--technical guide-document">
+  {{ if .Params.recorded_period }}<a class="back guide-back" href="{{ .CurrentSection.RelPermalink }}">← Back to Homelab documentation</a>{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ if .Params.recorded_period }}
+  <dl class="guide-dates">
+    <div><dt>Prepared</dt><dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></dd></div>
+    <div><dt>Recorded period</dt><dd>{{ .Params.recorded_period }}</dd></div>
+  </dl>
+  {{ end }}
+  <div class="article-layout">
+    <aside class="toc guide-toc"><details><summary>On this page</summary>{{ .TableOfContents }}</details></aside>
+    <div class="article-content">{{ .Content }}</div>
+  </div>
+  {{ if .Params.recorded_period }}
+  {{ $current := . }}{{ $pages := .CurrentSection.RegularPages.ByWeight }}
+  <nav class="guide-pagination" aria-label="Series navigation">
+    {{ range $index, $page := $pages }}{{ if eq $page.RelPermalink $current.RelPermalink }}
+      {{ if gt $index 0 }}{{ with index $pages (sub $index 1) }}<a href="{{ .RelPermalink }}"><small>Previous</small><span>← {{ .Title }}</span></a>{{ end }}{{ end }}
+      {{ if lt $index (sub (len $pages) 1) }}{{ with index $pages (add $index 1) }}<a href="{{ .RelPermalink }}"><small>Next</small><span>{{ .Title }} →</span></a>{{ end }}{{ end }}
+    {{ end }}{{ end }}
+  </nav>
+  <a class="back guide-back guide-back--bottom" href="{{ .CurrentSection.RelPermalink }}">← Back to Homelab documentation</a>
+  {{ end }}
+</article>
+{{ end }}
